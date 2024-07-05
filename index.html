@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        background-color: rgba(144, 58, 224, 0.678);
+    }
+    nav>ul{
+        text-align: center;
+        padding-top: 10px;
+        
+    }
+nav > ul>li {
+display: inline;
+padding-right: 15px;
+margin-right: 20px;
+font-size: 20px;
+text-decoration: none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+        color: black;
+}
+h2{
+    background-color: skyblue;
+    display:block;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+form > label{
+display: block;
+margin: 5px  0 10px 2px;
+}
+form > fieldset>label{
+    display : block;
+    margin: 5px 0 8px 4px;
+}
+fieldset{
+    margin: 8px;
+}
+legend{
+    background-color: yellowgreen;
+}
+
+
+
+
+
+</style>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <article>
+        <header>
+            <h2>My trip to mountain:</h2>
+            <p>published on: <time datetime="2024-04-15"> april,15,2024</time>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, nostrum hic neque velit accusamus ipsum rem labore commodi veniam sint animi deleniti omnis atque perspiciatis quia pariatur? Dicta libero, totam iure ipsum quae impedit enim modi dignissimos quis architecto ab ut culpa adipisci similique fuga. Vero, dolorem? Saepe facilis maiores itaque ut illo alias, voluptatibus consectetur ad, tempora molestias dolore commodi est at nobis harum atque? Tempore magni eaque totam, nulla temporibus praesentium quisquam. Dolorum quasi quidem cumque quis dolore expedita a ratione corporis voluptates asperiores obcaecati aliquam accusamus earum nemo, aperiam officiis adipisci impedit. Earum nam nisi nobis enim!</p>
+        </header>
+    </article>
+    <main>
+        <form action="form.php" method="get">
+            <label for="name">Your Name:
+                <input type="text" id="name" placeholder=" Enter your name ">
+            </label>
+            <label for="emanil">Your email:
+                <input type="email" id="email" placeholder=" Enter your email ">
+            </label>
+            <label for="phone">Your phone:
+                <input type="number" id="phone" placeholder=" Enter your phone ">
+            </label>
+            <fieldset class=" radio">
+                <legend>Pick one candy </legend>
+                    <label for="strobery">
+                        <input type="radio" name="candy" id=" stober">Strawbery
+                    </label>
+                    <label for="chocolate">
+                        <input type="radio" name="candy" id=" chocolate">Chocolate
+                    </label>
+                    <label for="gummy candy">
+                        <input type="radio" name="candy" id=" gummy candy">Gummy candy
+                    </label>
+                    <label for="Caramel">
+                        <input type="radio" name="candy" id=" Caramel">Caramel
+                    </label>
+               
+            </fieldset>
+            <fieldset class = "checklist">
+                <legend>
+Chose some drinks
+                </legend>
+
+                <label for="strawbery juce">
+                    <input type="checkbox" name="juce" id="strawbery">Strawbery juice
+                </label>
+                <label for="banana milk"> 
+                    <input type="checkbox" name="juce" id="banana">Banana milk
+                </label>
+                <label for="pomegranate juce">
+                    <input type="checkbox" name="juce" id="pomegranate">Pomegranate juice
+                </label>
+            </fieldset>
+            
+            <label for="textarea">
+            <textarea name="textarea" id="textarea"cols="30" rows="5" placeholder="Your opeinon is importent for us:"></textarea>
+        </label>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        </form>
+    </main>
+</main>
+</body>
+</html>
