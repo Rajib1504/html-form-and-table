@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Html form and table</title>
 </head>
 <style>
     *{
@@ -51,7 +51,14 @@ fieldset{
 legend{
     background-color: yellowgreen;
 }
+td,th{
+border: 1px solid black;
+padding: 5px;
+}
 
+table{
+    border-collapse: collapse;
+}
 
 
 
@@ -74,7 +81,7 @@ legend{
             <p>published on: <time datetime="2024-04-15"> april,15,2024</time>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, nostrum hic neque velit accusamus ipsum rem labore commodi veniam sint animi deleniti omnis atque perspiciatis quia pariatur? Dicta libero, totam iure ipsum quae impedit enim modi dignissimos quis architecto ab ut culpa adipisci similique fuga. Vero, dolorem? Saepe facilis maiores itaque ut illo alias, voluptatibus consectetur ad, tempora molestias dolore commodi est at nobis harum atque? Tempore magni eaque totam, nulla temporibus praesentium quisquam. Dolorum quasi quidem cumque quis dolore expedita a ratione corporis voluptates asperiores obcaecati aliquam accusamus earum nemo, aperiam officiis adipisci impedit. Earum nam nisi nobis enim!</p>
         </header>
     </article>
-    <main>
+    <section>
         <form action="form.php" method="get">
             <label for="name">Your Name:
                 <input type="text" id="name" placeholder=" Enter your name ">
@@ -123,7 +130,61 @@ Chose some drinks
         <input type="reset" value="Reset">
         <input type="submit" value="Submit">
         </form>
-    </main>
+    </section>
+    <section>
+        <h1>Table of players</h1>
+        <table>
+        <thead>
+            <caption>Players and their details:</caption>
+            <tr>
+                <th>Sl.</th>
+                <th>Name</th>
+                <th>team</th>
+                <th>run</th>
+                <th>wicket</th>
+            </tr>
+        </thead>
+        <br>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Rohit Sharma</td>
+                <td>India</td>
+                <td>89</td>
+                <td>1</td>
+            </tr>
+            <br>
+            <tr>
+                <td>2</td>
+                <td>Dhoni</td>
+                <td>India</td>
+                <td>70</td>
+                <td>3</td>
+            </tr>
+            <br>
+            <tr>
+                <td>3</td>
+                <td>kl Rahul</td>
+                <td>India</td>
+                <td>49</td>
+                <td>0</td>
+            </tr>
+            <br>
+            <tr>
+                <td>4</td>
+                <td>Virat kohli</td>
+                <td>India</td>
+                <td>50</td>
+                <td>0</td>
+            </tr>
+           <tfoot>
+            <tr>
+                <td colspan="5">total players are 4</td>
+            </tr>
+           </tfoot>
+        </tbody>
+    </table>
+    </section>
 </main>
 </body>
 </html>
